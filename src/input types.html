@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>input types</h1>
+    </header>
+    <div>
+        <form>
+            <div>
+                <label>Name</label>
+                <input name="username" requied minlength="5" maxlength="100" size="50" placeholder="Login user name"/>
+            </div>
+            <div>
+
+                <label>Email id</label>
+                <input title="enter email" id="email" type="email"/>
+
+            </div>
+            <div>
+                <label>
+                     Photo
+                </label>
+                <input placeholder="file"id="file"type="file"accept="audio/*,video/*image/*"/>
+            </div>
+            <div>
+                <label>DOB</label>
+                <input title="enter your date of birth"id="date"type="date"/>
+                <input title="enter date and time"id="datetime-local"type="datetime-local"/>
+                <input title="enter time here"id="time"type="time"/>
+                <input title="status"id="color"type="color"/>
+
+
+            </div>
+            <div>
+                <label>Years of Experence</label>
+                <input title="status"id="year"type="number"min=1 max=40 step=1 maxlength="3"/>
+            </div>
+            <div>
+                <label>Range</label>
+                <input id="range" type="range" step=10/>
+            </div>
+            <div>
+                <label>Skills</label>
+                <input id ="search" type ="search" placeholder ="search your Skill"/>
+                
+            </div>
+            <div>
+                <label>Hobbies</label>
+                
+            <input title="hobby" type="checkbox"checked=true name="items"value="Reading">Reading</input>
+            <input title="option1" type="checkbox"checked=true name="items"value="Music">Music</input>
+            <input title="option2" type="checkbox"checked=true name="items"value="Dance">Dance</input>
+
+
+            </div>
+            <div>
+                <label>hidden content</label>
+                <input id="hid"type="hidden"/>
+            </div>
+            <div>
+                <label>url</label>
+                <input title="enter url" id="url" type="url"/>
+
+
+
+            </div>
+            <div>
+                <label>Select course</label>
+                <select name="course list"title="select a course">
+                    <option selected>---Select a Value---</option>
+                    <option>html</option>
+                    <option>sql</option>
+                    <option>oracle</option>
+                    <optgroup label="database">
+                        <option>java</option>
+                        <option>bootstrap</option>
+                        
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label>Comments</label>
+                <input title="enter your comment here" id="comment"cols="50" rows="5"/>
+
+
+            </div>
+            
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
