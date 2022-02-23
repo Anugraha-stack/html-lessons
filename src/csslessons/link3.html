@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #chennai
+        {
+            color:green;
+        }
+        #madurai
+        {
+            color:#372196
+        }
+        a{
+            color:#ee19a7;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+        /*a[href="https://chennai.nic.in"]
+        {
+            color:rgb(59, 71, 14)
+        }
+        a[href="https://madurai.nic.in"]
+        {
+            color:rgb(20, 160, 73)
+        }*/
+        a[href*="chennai.nic"]
+        {
+            color:rgb(59, 71, 14)
+        }
+        a[href*="madurai.nic"]
+        {
+            color:rgb(20, 160, 73)
+        }
+
+    </style>
+    <title>link</title>
+</head>
+<body>
+    visit
+    <p> <a href="https://chennai.nic.in">CHENNAI</a></p>
+    or
+   <p>  <a href="https://Madurai.nic.in">MADURAI</a></p>
+   or
+   <p>   <a href="https://Madurai.nic.in/">MADURAI</a></p>
+</body>
+</html>
