@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Smiley-Thin';
+    src: url("Smiley-Thin.ttf.woff") format("woff"), url("Smiley-Thin.ttf.svg#Smiley-Thin") format("svg"), url("Smiley-Thin.ttf.eot"), url("Smiley-Thin.ttf.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /*end new font: smiley-thin*/
+  body {
+    background-color: #0d192b;
+  }
+  
+  #head-div {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 450px;
+    background-color: #14253d;
+    border-radius: 10px;
+    -webkit-box-shadow: 20px 20px #0C1729;
+            box-shadow: 20px 20px #0C1729;
+  }
+  
+  #head-div #image1cont #image1 {
+    margin: 20px;
+    margin-left: 16px;
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+  }
+  
+  #head-div #image1cont #eye {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    opacity: 0;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  
+  #head-div #image1cont:hover #eye {
+    opacity: 1;
+  }
+  
+  #head-div #image1cont:hover #image1 {
+    opacity: 0.3;
+  }
+  
+  #head-div #titleh3 {
+    color: white;
+    font-family: 'Outfit';
+    margin-left: 20px;
+    margin-top: 0px;
+    font-weight: 300;
+  }
+  
+  #head-div #description {
+    color: #8bacda;
+    font-family: 'Smiley-Thin';
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+  #head-div #ethereum {
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  
+  #head-div #numethe {
+    color: white;
+    font-weight: 100;
+    display: inline;
+    font-family: 'Outfit';
+    font-size: 13px;
+  }
+  
+  #head-div #clock {
+    margin-left: 60px;
+  }
+  
+  #head-div #day-left {
+    color: #8bacda;
+    font-weight: 100;
+    display: inline;
+    font-family: 'Outfit';
+    font-size: 13px;
+  }
+  
+  #head-div hr {
+    color: #2f415b;
+    width: 200px;
+  }
+  
+  #head-div #avatar {
+    border-radius: 40px;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
+  
+  #head-div #creation-of {
+    display: inline;
+    color: #8bacda;
+    font-weight: 100;
+    font-family: 'Outfit';
+    font-size: 13px;
+    position: absolute;
+    top: 400px;
+  }
+  
+  #head-div b {
+    color: white;
+  }
+  
+  #head-div a {
+    text-decoration: none;
+    color: white;
+  }
+  /*# sourceMappingURL=style.css.map */
