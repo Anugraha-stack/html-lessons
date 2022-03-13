@@ -1,3 +1,0 @@
-dbaeumer.vscode-eslint
-npm 
-esbenp.prettier-vscode
