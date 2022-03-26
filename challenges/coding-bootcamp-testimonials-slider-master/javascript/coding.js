@@ -1,33 +1,20 @@
-const prev = document.querySelector(".prev");
-const next= document.querySelector(".next");
-const slides = document.querySelectorAll(".slide");
+const btnSwitch = document.querySelector("#content-switcher-1");
+const btnSwitch2 = document.querySelector("#content-switcher-2");
+const testinomialOne = document.querySelector(".testinomial-one");
+const testinomialSecond = document.querySelector(".testinomial-second");
 
-let index = 0;
-
-display(index);
-
-function display (index) {
-    slides.forEach((slide) => {
-        slide.style.display = "none";
-    });
-    slides[index].style.display = "flex"
+function fn(event) {
+  if (event.target.matches("img")) {
+    testinomialOne.classList.toggle("display-none");
+    testinomialSecond.classList.toggle("display-none");
+  }
+  if (event.keyCode === 37 || event.keyCode === 39) {
+    testinomialOne.classList.toggle("display-none");
+    testinomialSecond.classList.toggle("display-none");
+  }
 }
 
-function nextslide() {
-    index++;
-    if(index > slides.length - 1){
-        index = 0;
-    }
-    display(index);
-}
+btnSwitch.addEventListener('click', fn);
+btnSwitch2.addEventListener('click', fn);
 
-function prevslide() {
-    index--;
-    if(index < 0){
-        index = slides.length - 1;
-    }
-    display(index);
-}
-next.addEventListener("click", nextslide);
-
-prev.addEventListener("click", prevslide);
+window.addEventListener("keydown", fn);

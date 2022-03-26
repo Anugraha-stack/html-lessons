@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+:root {
+    --black: #000;
+    --dark-gray: #555;
+    --gray: #999;
+    --neu-gray: hsl(0, 0%, 95%);
+    --neu-white: hsla(0, 0%, 100%, 0.75);
+    --prim-cyan: hsl(184, 100%, 22%);
+    --prim-dark-cyan: hsl(179, 100%, 13%);
+    --prim-orange: hsl(31, 77%, 52%);
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body {
+    background-color: var(--neu-gray);
+    color: var(--neu-white);
+    display: flex;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    height: 100vh;
+    overflow: auto;
+    overflow: hidden;
+  }
+/* style cards */
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+article {
+    height: 450px;
+    max-width: 278px;
+    padding: 42px;
+    position: relative;
+  }
+article.sedan {
+    background-color: var(--prim-orange);
+    border-radius: 7px 0 0 7px;
+  }
+article.suv {
+    background-color: var(--prim-cyan);
+  }
+article.luxury {
+    background-color: var(--prim-dark-cyan);
+    border-radius: 0 7px 7px 0;
+  }
+img {
+    margin-bottom: 36px;
+  }
+h1 {
+    color: var(--neu-gray);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+article p {
+    color: var(--neu-white);
+    font-size: 13.8px;
+    line-height: 1.5rem;
+  }
+button {
+    border-radius: 25px;
+    border: 2px solid var(--neu-gray);
+    bottom: 42px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    outline: none;
+    padding: 14px;
+    position: absolute;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    width: 146px;
+  }
+.sedan button {
+    background: var(--neu-gray);
+    color: var(--prim-orange);
+  }
+.suv button {
+    background-color: var(--neu-gray);
+    color: var(--prim-cyan);
+  }
+.luxury button {
+    background-color: var(--neu-gray);
+    color: var(--prim-dark-cyan);
+  }
+button:active {
+    transform: scale(0.9);
+  }
+/* style footer */
+.attribution {
+    bottom: 10px;
+    color: var(--gray);
+    font-size: 0.75rem;
+    line-height: 20px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+.attribution a {
+    color: var(--dark-gray);
+    text-decoration: none;
+  }
+.attribution a:hover {
+    color: var(--black);
+  }
+/* style tablet and mobile */
+@media only screen and (max-width: 844px) {
+  body {
+      display: flex;
+      flex-wrap: wrap;
+      overflow: scroll;
+      width: 100%;
+    }
+  main {
+      flex-direction: column;
+      padding: 50px 0;
+    }
+  article.sedan {
+      border-radius: 7px 7px 0 0;
+    }
+  article.luxury {
+      border-radius: 0 0 7px 7px;
+    }
+  article p {
+      font-size: 0.77rem;
+    }
+  .attribution {
+      padding-bottom: 10px;
+      position: relative;
+      width: auto;
+    }
+  }
