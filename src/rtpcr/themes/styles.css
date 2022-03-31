@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+ body {
+  background-color:lavender;
+ }
+ .heading {
+  color: rgb(49, 45, 45);
+ font-family: sans-serif;
+  text-align: center;
+ margin: 40px;
+  padding-left: 40px;
+ }
+ .form-container {
+ text-align: center;
+ }
+ div {
+  padding: 10px;
+ }
+ div input {
+  width: 350px;
+  height: 40px;
+  border: none;
+ background-color: white;
+  outline: none;
+  border-radius: 20px;
+ padding: 10px;
+  margin-left: 50px;
+ font-weight: 600;
+ }
+ .gender input,
+ .result input {
+ width: 20px;
+ height: 20px;
+ margin-left: 40px;
+ }
+ label {
+  color: rgb(9, 3, 34);
+ font-weight: 800;
+ }
+ .gender label {
+  margin-right: 10px;
+ }
+ .result label {
+  margin-right: 40px;
+ }
+ .name label {
+ margin-left: 40px;
+ }
+ .city label {
+ margin-left: 50px;
+ }
+ .report-num {
+  margin-right: 20px;
+ }
+ .lab-name {
+  margin-left: 20px;
+ }
+ .aadhar {
+  margin-right: 20px;
+ }
+ .add {
+  width: 100px;
+ height: 40px;
+ background-color: blue;
+ color: rgb(249, 251, 252);
+border: none;
+outline: none;
+  font-weight: 600;
+ border-radius: 20px;
+ cursor: pointer;
+ }
+ /* td {
+   padding: 20px;
+ }
+ table {
+   margin-left: 100px;
+ } */
+ ul {
+  list-style: none;
+ display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ justify-content: center;
+ width: 1200px;
+ margin-left: 80px;
+ }
+ ul li {
+  border: 1px solid black;
+ }

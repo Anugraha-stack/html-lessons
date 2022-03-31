@@ -1,6 +1,3 @@
-
-
-
 export const currencies = {
   MSG: 'Select a currency',
      USD: 'United States Dollar',

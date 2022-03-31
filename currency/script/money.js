@@ -1,6 +1,3 @@
-
-
-
    import { currencies } from "./currency.js";
 const primaryCurrency = document.getElementById("primary");
  const secondaryCurrency = document.getElementById("secondary");
