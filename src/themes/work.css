@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Manrope:wght@800&family=Montserrat:ital,wght@0,500;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+.wrapper {
+  width: 1170px;
+  margin: auto;
+  font-family: 'Manrope', sans-serif;
+}
+
+header {
+  background: url("../images/background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.nav {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav li a {
+  color: blue;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.nav li a:hover {
+  background: #fff;
+  color: #333;
+}
+
+.logo img {
+  width: 100px;
+  float: left;
+  height: auto;
+}
+
+.text {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  margin: 20% 30%;
+}
+
+.text h1 {
+  position: relative;
+  color: hsl(256, 26%, 20%);
+  font-weight: bolder;
+  margin-left: 519px;
+  ;
+
+
+}
