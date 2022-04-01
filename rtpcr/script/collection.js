@@ -1,5 +1,3 @@
-//collection.js
-
 import { checkEmptyInput } from "./validation.js";
 import { selectedRowToInput } from "./tabledisplay.js";
 
